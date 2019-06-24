@@ -376,15 +376,116 @@ FAQ PAGE
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*tablet styles*/
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  header {
+    justify-content: space-around;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  aside .content-wrapper {
+    margin: 50px 0;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width:;
+    margin: 0;
+  }
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 0;
+  }
+
+  .reviews article {
+
+  }
+
+  .reviews article div {
+    width: 
+  }
+
+  footer .content-wrapper {
+    width:;
+    margin: 100px 0;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 
+  }
+
+
+  /* about */
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mission-content p {
+    width: 40%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* faq */
+  .faq .content-wrapper {
+    justify-content: space-between;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.faq-content {
+    flex-basis: 40%;
+}
+
+.faq h2 {
+    width: 100%;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /*desktop styles*/
 }
 
 /* ==========================================================================
