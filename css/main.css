@@ -52,11 +52,11 @@ p {
 }
  
 img {
- 
+  width: 100%;
 }
  
 figure {
- 
+  margin: 0;
 }
  
 address {
@@ -190,6 +190,14 @@ header .content-wrapper {
   margin: 10px 0 20px 0;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 header nav {
   width: 60%;
   font-size: 1.125em;
@@ -249,7 +257,10 @@ footer .copyright {
 /* hero area */
 
 .hero {
-  background: url('../img/hero.jpg') no-repeat cover center;
+  background: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -290,6 +301,9 @@ aside {
 /* features */
 
 .features {
+  background: url('../img/middle.png');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -312,12 +326,14 @@ aside {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
 /* reviews */
 
 .reviews {
+  background: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -330,6 +346,7 @@ aside {
   width: 55%;
   margin: 20px 0;
 }
+
 /*===================================================
 ABOUT PAGE
 =======================================================*/
@@ -508,10 +525,6 @@ input[type=button] {
     margin: 100px 0;
   }
 
-  header {
-    justify-content: space-around;
-  }
-
   h2 {
     font-size: 2.25em;
     line-height: 1.333;
@@ -521,6 +534,16 @@ input[type=button] {
     font-size: 1.5em;
     line-height: 1.25;
 }
+
+  /*header*/
+
+  header {
+    justify-content: space-around;
+  }
+
+  header figure {
+    width: 30%;
+  }
 
   header .content-wrapper {
     width: 100%;
@@ -572,7 +595,7 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 0;
+    width: 50%;
   }
 /* reviews */
   .reviews article {
@@ -580,6 +603,7 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -591,6 +615,14 @@ input[type=button] {
   .reviews h3 {
     width: 75%;
     margin: 0;
+  }
+
+  .reviews figure {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
 /* footer */
   footer .content-wrapper {
